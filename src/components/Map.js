@@ -17,16 +17,16 @@ function Map(props) {
     return (
         <div>
             <ReactMapGL
-                    latitude={props.latitude}
-                    longitude={props.longitude}
+                    latitude={props?.data?.latitude}
+                    longitude={props?.data?.longitude}
                     {...viewport}
                     mapboxApiAccessToken={mapBoxToken}
                     onViewportChange={setViewPort}
                     mapStyle="mapbox://styles/mapbox/streets-v11"
                 >
                     <>
-                        <Address city={props.data.city} region={props.data.region} setShowMaps={props.setShowMaps} />
-                        <Marker latitude={props.latitude} longitude={props.longitude} >
+                        <Address city={props?.data?.city} region={props?.data?.region} setShowMaps={props.setShowMaps} />
+                        <Marker latitude={props?.data?.latitude} longitude={props?.data?.longitude} >
                             <img
                                 src={LocationPin}
                                 alt="https://www.freepik.com"

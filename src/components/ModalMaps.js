@@ -11,7 +11,7 @@ function ModalMaps(props) {
         size="lg"
         >
             <Modal.Body style={{ height: "100%" }}>
-                <Map latitude={props.data.latitude} longitude={props.data.longitude} data={props.data} setShowMaps={props.setShowMaps} />
+                <Map latitude={props?.data?.latitude} longitude={props?.data?.longitude} data={props?.data} setShowMaps={props.setShowMaps} />
             </Modal.Body>
         </Modal>
     );

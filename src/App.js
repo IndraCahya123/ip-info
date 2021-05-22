@@ -76,7 +76,7 @@ function App() {
                   width="40px"
                   height="40px"
                 />
-                <span style={{ fontSize: 18, marginLeft: 15 }}>{ dataIp.asn.name }</span>
+                <span style={{ fontSize: 18, marginLeft: 15 }}>{ dataIp.asn?.name }</span>
             </div>
             <button type="button" className="map-button" onClick={() => setShowMap(true)} >show maps</button>
             </motion.div>
