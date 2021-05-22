@@ -14,11 +14,13 @@ function Map(props) {
 
     const mapBoxToken = 'pk.eyJ1IjoiaW5kcmFjYiIsImEiOiJja20xazUzb3AwOHZrMnB1bDZxM2JqbmJqIn0.u18YM0U2ByjsLEDKjdnfLQ';
 
+    console.log(props?.latitude);
+
     return (
         <div>
             <ReactMapGL
-                    latitude={props?.data?.latitude}
-                    longitude={props?.data?.longitude}
+                    latitude={props?.latitude}
+                    longitude={props?.longitude}
                     {...viewport}
                     mapboxApiAccessToken={mapBoxToken}
                     onViewportChange={setViewPort}
@@ -26,7 +28,7 @@ function Map(props) {
                 >
                     <>
                         <Address city={props?.data?.city} region={props?.data?.region} setShowMaps={props.setShowMaps} />
-                        <Marker latitude={props?.data?.latitude} longitude={props?.data?.longitude} >
+                        <Marker latitude={props?.latitude} longitude={props?.longitude} >
                             <img
                                 src={LocationPin}
                                 alt="https://www.freepik.com"

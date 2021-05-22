@@ -12,6 +12,7 @@
   width: 80%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .landing-image{
@@ -52,4 +53,22 @@
 
 .content2{
   width: 300px;
+}
+
+@media only screen and (max-width: 360px) {
+  .content .title{
+    font-size: 24px;
+  }
+
+  .landing-image{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 30px;
+  }
+
+  .my-button{
+    padding: 3;
+    width: 100%;
+    font-size: 16px;
+  }
 }
