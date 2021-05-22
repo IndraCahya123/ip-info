@@ -17,7 +17,7 @@ import './App.css';
 function App() {
   const [load, setLoad] = useState(false);
   const [dataIp, setDataIp] = useState({});
-  const [data, setData] = useState(true);
+  const [data, setData] = useState(false);
   const [showMap, setShowMap] = useState(false);
 
   const getIpInfo = async () => {
